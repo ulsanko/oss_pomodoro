@@ -1,7 +1,3 @@
-# App created by Data Professor http://youtube.com/dataprofessor
-# GitHub repo of this app 
-# Demo of this app
-
 import streamlit as st
 import time
 
@@ -28,18 +24,21 @@ st.write("""
 Let's do some focus work in data science with this app.
 
 Developed by: [Data Professor](http://youtube.com/dataprofessor)
+Modified by: Donghyeon Ko
+
 
 """)
 
 # Timer
-# Created by adapting from:
-# https://www.geeksforgeeks.org/how-to-create-a-countdown-timer-using-python/
-# https://docs.streamlit.io/en/latest/api.html#lay-out-your-app
+st.sidebar.title("Settings")
+focus_min = st.sidebar.number_input("Focus Time (minutes)", 5, 60, 25)
+break_min = st.sidebar.number_input("Break Time (minutes)", 1, 30, 5)
+
 
 button_clicked = st.button("Start")
 
-t1 = 1500
-t2 = 300
+t1 = focus_min * 60
+t2 = break_min * 60
 
 if button_clicked:
     with st.empty():
