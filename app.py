@@ -1,7 +1,7 @@
 import streamlit as st
 import streamlit.components.v1 as components
 import time
-
+#ㅋㅋ 븅신신
 TIMER_CSS = """
 <style>
 .circle{
