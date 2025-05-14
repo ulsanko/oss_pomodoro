@@ -30,7 +30,7 @@ def local_css(file_name):
     with open(file_name) as f:
         st.markdown(f'<style>{f.read()}</style>', unsafe_allow_html=True)
 
-local_css("style.css")
+local_css("oss_pomodoro/style.css")
 
 #---------------------------------#
 st.write("""
@@ -61,10 +61,10 @@ if button_clicked:
         with container:
             components.html(draw_circle(t, t1), height=260, scrolling=False)
         time.sleep(1)
-    st.toast("🔔 Focus complete! Time for a break.", icon="🍅")
+    st.toast("🔔 Focus complete! Time for a break.", icon="✅")
 
     for t in range(t2, -1, -1):
         with container:
             components.html(draw_circle(t, t2), height=260, scrolling=False)
         time.sleep(1)
-    st.toast("⏰ Break is over!", icon="⏰")
+    st.toast("⏰ Break is over!", icon="💪")
