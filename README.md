@@ -1,4 +1,4 @@
-# pomodoro-app
+# pomodoro-app(J Team)
 
 # Watch the tutorial video
 
