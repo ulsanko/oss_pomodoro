@@ -1,4 +1,4 @@
-# pomodoro-app(J Team)
+# pomodoro-app(K Team)
 
 # Watch the tutorial video
 
